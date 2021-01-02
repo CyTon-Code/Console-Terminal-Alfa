@@ -1,0 +1,3 @@
+$var
+write $var -v "Hello_World" 
+print $var
