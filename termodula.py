@@ -1,22 +1,31 @@
 import sys
+
+
 Name = "root"
 Vmail = "localhost"
 Address = ""
+
 
 def SortArguments(args):
     # your code goes here
     pass
 
 
-def GetArguments(Name = "root", Domen = "localhost", PsevdoAddress = "~"):
-    PsevdoAddress = Address
+def GetPsevdoAddress(Address): # никогда не возвращайте аргументы как результат.
     if Address == "":
-        PsevdoAddress="~"
-    Mail = "{}@{}".format(Name, Domen)
+        return "~"
+    else:
+        return Address
+
+
+def GetArguments(Name = "root", Domen = "localhost", PsevdoAddress = "~"):
+    PsevdoAddress = GetPsevdoAddress(Address)
+    Mail = str(Name) + "@" + str(Domen)
     
-    print("[{} {}]".format(Mail, PsevdoAddress))
-    # your code goes here
-    pass
+    Hello = "[" + Mail + " " + PsevdoAddress + "]$ "
+    CommandLine = input(Hello)
+    
+    return StringToList(CommandLine)
 
 
 def TerminalArguments():
