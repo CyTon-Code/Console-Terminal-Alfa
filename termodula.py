@@ -18,7 +18,7 @@ def GetPsevdoAddress(Address): # никогда не возвращайте ар
         return Address
 
 
-def GetArguments(Name = "root", Domen = "localhost", PsevdoAddress = "~"):
+def GetArguments(Name = "root", Domen = "localhost", Address = ""):
     PsevdoAddress = GetPsevdoAddress(Address)
     Mail = str(Name) + "@" + str(Domen)
     
