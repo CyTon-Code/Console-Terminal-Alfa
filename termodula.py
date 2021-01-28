@@ -11,7 +11,7 @@ def SortArguments(args):
     pass
 
 
-def GetPsevdoAddress(Address): # никогда не возвращайте аргументы как результат.
+def GetPsevdoAddress(Address): # ЕСли терминал смотрит с места где находится то ~
     if Address == "":
         return "~"
     else:
