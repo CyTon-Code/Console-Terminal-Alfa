@@ -2,7 +2,7 @@ import sys
 
 
 Name = "root"
-Vmail = "localhost"
+Domen = "localhost"
 Address = ""
 
 
